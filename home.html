@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura's AMAZING 3D Print Shop | Imagine & Create</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #ffe66d;
+            --text-dark: #2f2f2f;
+            --bg-light: #f7f9fc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark)<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura&apos;s AMAZING 3D Print Shop | Imagine & Create</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #ffe66d;
+            --text-dark: #2f2f2f;
+            --bg-light: #f7f9fc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a7a1ff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* --- Catalog Section --- */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        /* --- Product Cards --- */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a7a1ff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* --- Catalog Section --- */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+/* --- Table Styling --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        tr {
+            border-bottom: 2px solid #eee;
+        }
+
+        td {
+            padding: 20px;
+            vertical-align: middle;
+        }
+
+        /* Column 1: Image */
+        .image-col {
+            width: 150px;
+        }
+
+        .image-col img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Column 2: Text */
+        .text-col h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .text-col p {
+            margin: 0;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .highlight {
+            color: #3d95ce; /* Venmo Blue */
+            font-weight: bold;
+        }
+
+
+        /* --- Product Cards --- */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 2px solid transparent;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.2rem;
+        }
+
+        .price {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .buy-btn:hover {
+            background-color: #3dbbb3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+     
+        <h1>Laura's AMAZING 3D Print Shop!</h1>
+        <p>Imagine it, Print it, Play with it!</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Catalog</h2>
+        
+        <div class="catalog-grid">
+            <div class="product-card">
+                <img src="images/heart-bookmark.webp" alt="Valentine's Day Heart Bookmarks">
+                <h3>Valentine's Day Heart Bookmarks</h3>
+                <span class="price">$1</span>
+              
+            </div>
+
+            <div class="product-card">
+                <img src="images/pencil-toppers.webp" alt="Pencil Topper">
+                <h3>Valentine's Day Heart Pencil Toppers</h3>
+                <span class="price">$2</span>
+               
+            </div>
+
+            <div class="product-card">
+                <img src="images/valentines-heart.webp" alt="Heart">
+                <h3>Valentine's Day Articulated Heart</h3>
+                <span class="price">$4</span>
+
+</div>
+
+                
+      <div class="product-card">
+                 <img src="images/hello-kitty.webp" alt="Hello Kitty">
+                <h3>Hello Kitty</h3>
+                <span class="price">$4</span>
+                
+            </div>
+<div class="product-card">
+                 <img src="images/mini-bear.webp" alt="Mini Bear">
+                <h3>4 Mini articulated gummy bears</h3>
+                <span class="price">$4</span>
+                
+            </div>
+
+ <div class="product-card">
+                 <img src="images/baby-doll.webp" alt="Baby Doll">
+                <h3>Small Baby Doll</h3>
+                <span class="price">$3</span>
+                
+            </div>
+ <div class="product-card">
+                 <img src="images/dog.webp" alt="Dog">
+                <h3>Dog</h3>
+                <span class="price">$2</span>
+                
+            </div>
+ <div class="product-card">
+                 <img src="images/easter-bunny.webp" alt="Bunny">
+                <h3>Bunny</h3>
+                <span class="price">$3</span>
+                
+            </div>
+
+ <div class="product-card">
+                 <img src="images/doll.png" alt="Baby Doll">
+                <h3>Small Doll</h3>
+                <span class="price">$2</span>
+                
+            </div>
+
+ <div class="product-card">
+                 <img src="images/doll-crib.webp" alt="Baby Doll Crib">
+                <h3>Small Baby Doll Crib</h3>
+                <span class="price">$4</span>
+                
+            </div>
+
+ <div class="product-card">
+                 <img src="images/finger-skateboard.webp" alt="Skateboard">
+                <h3>Finger Skateboard</h3>
+                <span class="price">$3</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/boba-fett.webp" alt="Mini Bear">
+                <h3>Boba Fett - Star Wars</h3>
+                <span class="price">$4</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/glider.webp" alt="Glider">
+                <h3>Lightweight Plane Glider</h3>
+                <span class="price">$1</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/dragon-1.webp" alt="Dragon">
+                <h3>Articulated Dragon</h3>
+                <span class="price">$4</span>
+                
+            </div>
+
+
+            <div class="product-card">
+                     <img src="images/unicorn.webp" alt="Unicorn">
+                <h3>Cute Unicorn</h3>
+                <span class="price">$3</span>
+               
+            </div>
+
+<div class="product-card">
+                     <img src="images/boomerang.webp" alt="Boomerang">
+                <h3>Small Boomerang</h3>
+                <span class="price">$2</span>
+               
+            </div>
+
+ <div class="product-card">
+                     <img src="images/unicorn-snack-holder.webp" alt="Unicorn">
+                <h3>Cute Unicorn Snack Holder</h3>
+                <span class="price">$6</span>
+               
+
+            </div>
+<div class="product-card">
+                     <img src="images/dino-snack-holder.webp" alt="Dino">
+                <h3>Cute Dino Snack Holder</h3>
+                <span class="price">$6</span>
+               
+            </div>
+
+            <div class="product-card">
+                <img src="images/cybertruck.webp" alt="Cybertruck">
+                <h3>Cybertruck</h3>
+                <span class="price">$10</span>
+                
+            </div>
+
+   <div class="product-card">
+                <img src="images/tiny-snake.webp" alt="Snake">
+                <h3>Tiny Snake</h3>
+                <span class="price">$2</span>
+                
+            </div>
+
+ <div class="product-card">
+                <img src="images/shark.webp" alt="Shark">
+                <h3>Articulated Shark</h3>
+                <span class="price">$2</span>
+                
+            </div>
+
+ <div class="product-card">
+                <img src="images/baby-giraffe.webp" alt="Baby Giraffe">
+                <h3>Knitted Baby Giraffe</h3>
+                <span class="price">$3</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/axolotl.webp" alt="Axolotl">
+                <h3>3 Cute Tiny Articulated Axolotls</h3>
+                <span class="price">$6</span>
+     </div>
+
+<div class="product-card">
+                 <img src="images/pencil-holder.webp" alt="Pencil Holder">
+                <h3>Heart Pencil Holder</h3>
+                <span class="price">$6</span>
+                
+            </div>
+
+
+<div class="product-card">
+                 <img src="images/trex-pencil-holder.webp" alt="T-REX Pencil Holder">
+                <h3>T-REX Pencil Holder</h3>
+                <span class="price">$6</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/pocket-tic-tac-toe.webp" alt="Tic Tac Toe">
+                <h3>Pocket Tic Tac Toe</h3>
+                <span class="price">$5</span>
+                
+            </div>
+
+<div class="product-card">
+                 <img src="images/jesus.webp" alt="Jesus">
+                <h3>Jesus Cross</h3>
+                <span class="price">$5</span>
+                
+            </div>
+
+ <div class="product-card">
+                <img src="images/qtip.webp" alt="Qtip">
+                <h3>Q tips & Cotton pads Holder</h3>
+                <span class="price">$6</span>
+                
+            </div>
+        </div>
+<div class="container">
+        <h2 class="section-title">How to Order</h2>
+        
+        <table>
+            <tr>
+                <td class="image-col">
+                    <img src="images/venmo-qrcode.jpeg" alt="Venmo QR Code">
+                </td>
+                
+                <td class="text-col">
+                    <h3>Pay with Venmo</h3>
+                    <p>Laura takes orders via <span class="highlight">Venmo @my3dprintshop. 
+<a href="https://venmo.com/u/my3dprintshop" target="_blank" class="venmo-btn">
+    Pay here with Venmo </a>
+</span>. <br>
+                    Include your product name, email address, and shipping address in the Venmo comment section. If you don't have Venmo, just email Laura at laura3dprintshop@gmail.com and pay with cash upon delivery.</p>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+            
+              
+            </div>
+    </div>
+
+        </div>
+<div class="container">
+        <h2 class="section-title">FAQ</h2>
+             
+                <p>1) What should I do if I can't find what I want? Please e-mail Laura with your request and she will get in touch.</p>
+
+  <p>2) How long does it take to deliver? It can take 1-2 days to print and deliver the item.</p>
+
+  <p>3) Can I request another colour? Our selection of colours is limited however, we will do our best to accommodate it but can't promise it. The colours we have are: white, yellow, green, light blue, dark blue, lilac, silky purple, red, brown, pink, black, orange and beige. Let us know in the comments in Venmo if you would like your item in one of these colours </p>
+
+  <p>4) Are the items exactly the same colour as in the pictures? Colours of the 3D printed items might be slightly different than in the pictures.  </p>
+
+<p>5) Do you print items in more than one colour? Our items are sigle coloured. </p>
+
+
+
+              
+            </div>
+    </div>
+
+<div class="container">
+        <h2 class="section-title">About Laura</h2>
+        
+        <table>
+            <tr>
+                <td class="image-col">
+                    <img src="images/LD.png" alt="About">
+                </td>
+                
+                <td class="text-col">
+                    <p>Laura is a 2nd-grade student who loves technology and arts and crafts. Her family supports her on this <strong>entrepreneurial</strong> project in the background, helping bring her creative visions to life!<br>
+                    She created this shop so she can <strong> make people happy.</strong></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2026 Laura's AMAZING 3D Print Shop. Contact: laura3dprintshop@gmail.com</p>
+    </footer>
+
+</body>
+</html>
